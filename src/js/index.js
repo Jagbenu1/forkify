@@ -39,6 +39,7 @@ const controlSearch = async () => {
             // 5) Render results on UI
             clearLoader();
             searchView.renderResults(state.search.result);
+			console.log(state.search.results);
         } catch (err) {
             alert('Something wrong with the search...');
             clearLoader();
